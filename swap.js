@@ -1,4 +1,5 @@
-Swap = (() => {
+var Swap = (() => {
+    "use strict";
     var loaders = {}, unloaders = {};
     register_links();
     new MutationObserver(dom_changes).observe(document.querySelector("html"), { childList: true, subtree: true });
@@ -22,21 +23,21 @@ Swap = (() => {
             }
     }
     function dom_changes(mutations) {
-        for (selector in unloaders)
-            for (m of mutations)
-                for (n of m.removedNodes)
+        for (var selector in unloaders)
+            for (var m of mutations)
+                for (var n of m.removedNodes)
                     if (n.matches && n.querySelector && (n.matches(selector) || n.querySelector(selector))) {
                         unloaders[selector]();
                         delete unloaders[selector];
                     }
-        for (selector in loaders)
-            for (m of mutations)
-                for (n of m.addedNodes) 
+        for (var selector in loaders)
+            for (var m of mutations)
+                for (var n of m.addedNodes) 
                     if (n.matches && n.querySelector && (n.matches(selector) || n.querySelector(selector)))
                             unloaders[selector] = loaders[selector]();
     }
     function dom_load() {
-        for (selector in loaders)
+        for (var selector in loaders)
             if (document.querySelector(selector))
                     unloaders[selector] = loaders[selector]();
     }
