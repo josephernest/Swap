@@ -107,9 +107,17 @@ For this reason, this micro-library will always stay single-file and not have mo
 
 Issues, ideas, discussions are welcome - please open an issue before doing a pull request to be sure it is necessary.
 
+Which simple feature would you wanto to see included? After all the current code is < 50 lines of code, so there is plenty of room until reaching the 100 lines of code limit :)
+
 # Author
 
 Joseph Ernest
+
+I am available for R&D, Python, Data science, ML, Automation consulting. Please contact me on https://afewthingz.com for consulting/freelancing requests.
+
+Sponsors are welcome to support the development of my open-source projects.
+
+I am currently sponsored by [CodeSigningStore.com](https://codesigningstore.com). Thank you to them for providing a DigiCert Code Signing Certificate and supporting open source software.
 
 # License
 
