@@ -30,7 +30,7 @@ Key idea:
 
 # Simple example
 
-See `demo1` folder.
+See `demo1/` folder.
 
 `index.html`
 ```
@@ -52,7 +52,15 @@ See `demo1` folder.
 </body>
 ```
 
-Of course, in real life, you don't want to duplicate the same header and footer in multiple HTML files, and you will want to use server-side rendering: for a more complete example, see `demo2` folder with PHP code, multiple screens, multiple containers to be replaced, and also with some JS code that is run automatically when elements are inserted/destroyed in the DOM.
+Of course, in real life, you don't want to duplicate the same header and footer in multiple HTML files, and you will want to use server-side rendering: for a more complete example, see `demo2/` folder with PHP code, multiple screens, multiple containers to be replaced, and also with some JS code that is run automatically when elements are inserted/destroyed in the DOM.
+
+# More advanced example
+
+The folder `demo3-email/` is another example of usage of the library. Nearly no JS is written, but mostly HTML attributes.
+
+[**Live demo**](https://afewthingz.com/swap-library/email/)
+
+[![](https://user-images.githubusercontent.com/6168083/183262644-de8b396c-a0ee-46fc-9ebc-943ba7bf656b.png)](https://afewthingz.com/swap-library/email/)
 
 # Documentation
 
