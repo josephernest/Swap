@@ -107,7 +107,7 @@ For this reason, this micro-library will always stay single-file and not have mo
 
 Issues, ideas, discussions are welcome - please open an issue before doing a pull request to be sure it is necessary.
 
-Which simple feature would you wanto to see included? After all the current code is < 50 lines of code, so there is plenty of room until reaching the 100 lines of code limit :)
+Which simple feature would you want to to see included? After all the current code is < 50 lines of code, so there is plenty of room until reaching the 100 lines of code limit :)
 
 # Author
 
