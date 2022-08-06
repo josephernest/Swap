@@ -19,6 +19,15 @@ Important aspects:
 * the good old `<a href="..."` navigation still works if JavaScript is disabled in the browser (progressive enhancement)
 * you can keep your current server-side rendering solution (PHP, Python...)
 
+Key idea:
+ 
+> ```
+> <a href="newpage.html" swap-target="#container" swap-history="true">Click me</a>
+> <div id="container">Container</div>`
+> ```
+>
+> When you click on *"Click me"*, the element `#container` is replaced by `newpage.html`'s `#container`. Simple isn't it?
+
 # Simple example
 
 See `demo1` folder.
@@ -42,8 +51,6 @@ See `demo1` folder.
 <script src="../swap.js"></script>
 </body>
 ```
-
-When you click on *"Go to screen 2"*, the element `#container` is replaced by `screen2.html`'s `#container`. Simple isn't it?
 
 Of course, in real life, you don't want to duplicate the same header and footer in multiple HTML files, and you will want to use server-side rendering: for a more complete example, see `demo2` folder with PHP code, multiple screens, multiple containers to be replaced, and also with some JS code that is run automatically when elements are inserted/destroyed in the DOM.
 
