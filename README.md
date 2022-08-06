@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/6168083/183243666-7d5cae1d-d0ba-4b69-85a5-f60a4099e432.png)
 
-The goal of the **Swap.js** project is to make a "HTML over the wire" micro-library which facilitates AJAX-style navigation, in less than ~ 100 lines of code. (See "Why?" paragraph below)
+**Swap.js** is a "HTML over the wire" micro-library which facilitates AJAX-style navigation, in less than ~ 100 lines of code. (See "Why?" paragraph below)
 
 This is inspired by the recent libraries that make "HTML over the wire" techniques popular again (HTMX, Unpoly, Hotwire...).
 
