@@ -1,0 +1,29 @@
+* { outline: 0; }
+html, body { height: 100%; font-family: sans-serif; }
+body { display: flex; flex-direction: column; margin: 0; background-color: #f6f8fc; color: #5f6368; }
+a { color: inherit; text-decoration: none; }
+.header { padding: 0.75em; font-size: 1.5em; }
+.main { flex: 1; display: flex; }
+.col1 { flex: 0 16em; display: flex; flex-direction: column; user-select: none; }
+.col1 .button { font-weight: bold; cursor: pointer; }
+.col1 .compose { background-color: cyan; border-radius: 1em; margin: 1em 4em 1em 1em; padding: 0.5em 1em; text-align: center; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); }
+.col1 .compose:hover { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05); }
+.col1 .label { padding: 0.2em 2em; }
+.col1 .label:hover { background-color: #dfe0e6; border-radius: 0 1em 1em 0; }
+.col2 { flex: 1; border-radius: 1em; overflow: hidden; background-color: white; margin: 1em; }
+.col2 .content { padding: 1em 1em 1em 0; }
+.col2 .content h3, .content p { margin: 1em; }
+.col2 .email-title { display: flex; border-bottom: 1px solid #eee; background-color: #f2f6fc; padding: 0.25em 1em; cursor: pointer; }
+.col2 .email-title:first-of-type { border-top: 1px solid #eee; }
+.col2 .email-title:hover { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); position: relative; }
+.col2 .email-title .sender { flex: 0 8em; }
+.col2 .email-title .subject { flex: 1; }
+.col2 .email-title .date { flex: 0 4em; }
+.modal-background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.5; background-color: black; }
+.modal-title { background-color: #dfe0e6; padding: 0.705em 1em; border-radius: 1em 1em 0 0; font-weight: bold; }
+.modal-compose-window { position: absolute; top: 10%; left: 15%; width: 70%; height: 80%; border-radius: 1em 1em 0 0; background-color: white; opacity: 1; display: flex; flex-direction: column; }
+.modal-compose-content { display: flex; flex-direction: column; padding: 1em; flex: 1; }
+.modal-compose-content div { margin: 0.25em; }
+.modal-compose-content .text { flex: 1; }
+.infobox { position: absolute; right: 1em; top: 1em; width: 30em; height: 1em; background-color: white; border-radius: 0.5em; padding: 1em; opacity: 0.5; display: none; }
+.visible { display: block; }
