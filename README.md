@@ -1,10 +1,14 @@
 # Swap.js
 
-![image](https://user-images.githubusercontent.com/6168083/183243666-7d5cae1d-d0ba-4b69-85a5-f60a4099e432.png)
+![logo_new300px](https://github.com/josephernest/Swap/assets/6168083/38f392b7-b537-4cb9-a52a-6c0ef25a8c85)
 
-**Swap.js** is a "HTML over the wire" micro-library which facilitates AJAX-style navigation, in less than ~ 100 lines of code. (See ["Why?"](#user-content-why-a-100-line-of-code-limit) paragraph below)
 
-This is inspired by the recent libraries that make "HTML over the wire" techniques popular again (HTMX, Unpoly, Hotwire...).
+**Swap.js** is a JavaScript micro-library which facilitates AJAX-style navigation in web pages, in less than ~ 100 lines of code. (See ["Why?"](#user-content-why-a-100-line-of-code-limit) paragraph below)
+
+This is inspired by the recent libraries that make server-side-rendering and "HTML-over-the-wire" techniques popular again (HTMX, Unpoly, Hotwire...).  
+In short, portions of a web page can be replaced by new content sent directly from the server as HTML fragments, in a very simple way.
+
+Demo here using this library: [**Demo**](https://afewthingz.com/swap-library/email/)
 
 Features:
 
@@ -19,7 +23,7 @@ Important aspects:
 * the good old `<a href="..."` navigation still works if JavaScript is disabled in the browser (progressive enhancement)
 * you can keep your current server-side rendering solution (PHP, Python...)
 
-Key idea:
+**Key idea:**
  
 > ```
 > <a href="newpage.html" swap-target="#container" swap-history="true">Click me</a>
@@ -103,6 +107,8 @@ When you start a new web project and decide to use a rather new library xyz.js, 
 
 For this reason, this micro-library will always stay single-file and not have more than ~ 100 lines of code. No complex feature will be added, it will stay very basic. The benefit of all this is that you can read, understand, and improve the full code of the micro-library in less than 1 hour of your time.
 
+This project's source code was initially *much larger* than its current state, with more complex mechanisms (for the same result), and I spent good time simplifying it and keep (what I find) the most elegant solution. It looks simple now, but it wasn't initially ;) (the use of MutationObserver API was helpful).
+
 # Contributions
 
 Issues, ideas, discussions are welcome - please open an issue before doing a pull request to be sure it is necessary.
@@ -113,7 +119,7 @@ Which simple feature would you want to to see included? After all the current co
 
 Joseph Ernest
 
-I am available for R&D, Python, Data science, ML, Automation consulting. Please contact me on https://afewthingz.com for consulting/freelancing requests.
+For R&D, Python, data science, automation consulting/freelancing requests, please contact me on https://afewthingz.com.
 
 Sponsors are welcome to support the development of my open-source projects.
 
